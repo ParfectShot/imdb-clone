@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + "  mx-4 lg:mx-12"}>
+      <body className={inter.className + "  mx-4 lg:mx-24"}>
         <Providers>
           {/* Header */}
           <Header />

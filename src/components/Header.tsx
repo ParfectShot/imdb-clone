@@ -7,7 +7,7 @@ import DarkModeSwitch from './DarkModeSwitch';
 
 const Header = () => {
   return (
-    <div className='flex justify-between items-center p-4 py-6 lg:px-8'>
+    <div className='flex justify-between items-center py-6'>
       <div className="gap-6 items-center lg:gap-12 flex ">
         <div className="">
           <MenuItem title="Home" link="/" Icon={() => <BiSolidHomeAlt2 />}/>
