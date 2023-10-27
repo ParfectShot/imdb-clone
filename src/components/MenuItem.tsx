@@ -8,7 +8,7 @@ const MenuItem = ({title, link, Icon}: {
     Icon?: () => ReactNode
 }) => {
   return (
-    <Link className='flex items-center gap-2 hover:text-amber-300' href={link}>
+    <Link className='flex items-center gap-2 hover:text-amber-600' href={link}>
       {Icon && (
         <div className="lg:hidden">
           <Icon />

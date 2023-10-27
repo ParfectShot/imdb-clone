@@ -1,12 +1,13 @@
 import React from 'react'
 import MenuItem from './MenuItem'
-import {BiSolidSun, BiSolidHomeAlt2, BiInfoCircle} from 'react-icons/bi'
+import {BiSolidHomeAlt2} from 'react-icons/bi'
 import { AiOutlineInfo } from "react-icons/ai";
 import {SiImdb} from 'react-icons/si'
+import DarkModeSwitch from './DarkModeSwitch';
 
 const Header = () => {
   return (
-    <div className='flex justify-between items-center p-4 lg:px-8'>
+    <div className='flex justify-between items-center p-4 py-6 lg:px-8'>
       <div className="gap-6 items-center lg:gap-12 flex ">
         <div className="">
           <MenuItem title="Home" link="/" Icon={() => <BiSolidHomeAlt2 />}/>
@@ -19,12 +20,10 @@ const Header = () => {
       </div>
       <div className='flex items-center gap-4 lg:gap-12'>
         <div className=''>
-            <BiSolidSun/>
-            {/* <BiSolidMoon /> */}
+            <DarkModeSwitch />
         </div>
         <div className=''>
-      <SiImdb className="lg:text-2xl"  />
-
+            <SiImdb className="text-2xl lg:text-4xl"  />
         </div>
       </div>
     </div>
